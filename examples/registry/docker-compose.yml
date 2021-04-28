@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  colony-registry:
+    network_mode: host
+    hostname: colony-registry
+    container_name: colony-registry
+    image: gobridget/colony-registry:latest
+    restart: always
+    environment:
+    - HTTP_ADDR=:30000
+    - DNS_ADDR=:53530
+    - PPROF_ADDR=off

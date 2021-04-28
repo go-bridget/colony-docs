@@ -1,0 +1,27 @@
+site_name: Colony
+repo_url: https://github.com/go-bridget/colony-docs
+
+plugins:
+  - diagrams
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+nav:
+  - 'index.md'
+  - 'topology.md'
+  - 'Colony Registry':
+    - 'registry/index.md'
+    - 'registry/setup.md'
+    - 'registry/config.md'
+  - 'Colony Agent':
+    - 'agent/index.md'
+    - 'agent/setup.md'
+    - 'agent/permissions.md'
+    - 'agent/config.md'
+  - 'Deployment':
+    - 'deploy/index.md'
+    - 'deploy/dns.md'
