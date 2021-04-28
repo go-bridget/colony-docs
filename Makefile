@@ -3,7 +3,7 @@
 all: meta up
 
 deploy:
-	@docker-compose exec --env SSH_AUTH_SOCK=${SSH_AUTH_SOCK} mkdocs mkdocs gh-deploy
+	docker-compose exec mkdocs mkdocs gh-deploy
 
 up:
 	@docker-compose up -d --remove-orphans
